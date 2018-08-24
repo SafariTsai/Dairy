@@ -24,6 +24,7 @@
 		04C7A073212D49570041EAE2 /* LiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A072212D49570041EAE2 /* LiveTableViewCell.swift */; };
 		04C7A075212D5E5F0041EAE2 /* LivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A074212D5E5F0041EAE2 /* LivingViewController.swift */; };
 		04C7A081212E5D830041EAE2 /* LiveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A080212E5D820041EAE2 /* LiveTableViewController.swift */; };
+		04D44C38212FEF10001B2A65 /* SecTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44C37212FEF10001B2A65 /* SecTableViewCell.swift */; };
 		60EC7C655D8D7BB07B6EE4EF /* Pods_Dairy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6689CA874EE80469E0B9D623 /* Pods_Dairy.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		04C7A074212D5E5F0041EAE2 /* LivingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingViewController.swift; sourceTree = "<group>"; };
 		04C7A080212E5D820041EAE2 /* LiveTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTableViewController.swift; sourceTree = "<group>"; };
 		04C7A082212E5E4D0041EAE2 /* Dairy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dairy-Bridging-Header.h"; sourceTree = "<group>"; };
+		04D44C37212FEF10001B2A65 /* SecTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecTableViewCell.swift; sourceTree = "<group>"; };
 		3276E80BF5EB8EB778CBD560 /* Pods-Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dairy/Pods-Dairy.debug.xcconfig"; sourceTree = "<group>"; };
 		6689CA874EE80469E0B9D623 /* Pods_Dairy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dairy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8ED33B7D448987F24C807F7 /* Pods-Dairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dairy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dairy/Pods-Dairy.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				048E328A212C42E200FF5D92 /* SecondViewController.swift */,
 				04C7A072212D49570041EAE2 /* LiveTableViewCell.swift */,
 				04C7A074212D5E5F0041EAE2 /* LivingViewController.swift */,
+				04D44C37212FEF10001B2A65 /* SecTableViewCell.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				04C7A069212D224C0041EAE2 /* INKRootLiveStream.swift in Sources */,
 				04C7A073212D49570041EAE2 /* LiveTableViewCell.swift in Sources */,
 				04C7A081212E5D830041EAE2 /* LiveTableViewController.swift in Sources */,
+				04D44C38212FEF10001B2A65 /* SecTableViewCell.swift in Sources */,
 				04C7A068212D224C0041EAE2 /* INKRootData.swift in Sources */,
 				048E3289212C42E200FF5D92 /* FirstViewController.swift in Sources */,
 			);

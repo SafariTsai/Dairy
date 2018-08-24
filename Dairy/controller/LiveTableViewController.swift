@@ -12,7 +12,6 @@ import Kingfisher
 
 class LiveTableViewController: UITableViewController {
 	
-	
 	@IBAction func btnBack(_ sender: UIButton) {
 		self.dismiss(animated: true, completion: nil)
 		
