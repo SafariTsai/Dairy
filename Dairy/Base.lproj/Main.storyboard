@@ -105,17 +105,17 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LiveCell" rowHeight="477" id="yiP-26-Nbn" customClass="LiveTableViewCell" customModule="Dairy" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="477"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LiveCell" rowHeight="418" id="yiP-26-Nbn" customClass="LiveTableViewCell" customModule="Dairy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="418"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yiP-26-Nbn" id="iwH-92-jat">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="477"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yiP-26-Nbn" id="iwH-92-jat">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="overview" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-Vr-pxn">
-                                            <rect key="frame" x="30" y="0.0" width="315" height="394"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="overview" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-Vr-pxn">
+                                            <rect key="frame" x="30" y="24" width="315" height="360"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="PS8-Vr-pxn" secondAttribute="height" multiplier="4:5" id="Qrc-ng-dqv"/>
+                                                <constraint firstAttribute="width" secondItem="PS8-Vr-pxn" secondAttribute="height" multiplier="7:8" id="Qrc-ng-dqv"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -136,10 +136,10 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="location" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fux-su-DIU">
-                                            <rect key="frame" x="30" y="423" width="61" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="location" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fux-su-DIU">
+                                            <rect key="frame" x="30" y="449" width="61" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -147,10 +147,10 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="nick" text="nick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il1-I2-5iC">
-                                            <rect key="frame" x="30" y="402" width="32" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="nick" text="nick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il1-I2-5iC">
+                                            <rect key="frame" x="30" y="428" width="32" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -158,10 +158,10 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="online_user" text="online_user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-HQ-JHT">
-                                            <rect key="frame" x="30" y="452" width="86" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" restorationIdentifier="online_user" text="online_user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-HQ-JHT">
+                                            <rect key="frame" x="30" y="478" width="86" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -171,16 +171,15 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="PS8-Vr-pxn" secondAttribute="bottom" constant="26" id="Foi-g1-yfx"/>
                                         <constraint firstItem="fux-su-DIU" firstAttribute="leading" secondItem="Emb-HQ-JHT" secondAttribute="leading" id="G1V-cw-Yv7"/>
                                         <constraint firstItem="Emb-HQ-JHT" firstAttribute="top" secondItem="fux-su-DIU" secondAttribute="bottom" constant="8" symbolic="YES" id="lKa-fh-GCF"/>
                                         <constraint firstAttribute="trailing" secondItem="PS8-Vr-pxn" secondAttribute="trailing" constant="30" id="peQ-rM-2gv"/>
-                                        <constraint firstAttribute="bottom" secondItem="PS8-Vr-pxn" secondAttribute="bottom" constant="83" id="rdY-PD-cHc"/>
+                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="top" secondItem="iwH-92-jat" secondAttribute="top" constant="24" id="qyc-AR-qr6"/>
                                         <constraint firstItem="PS8-Vr-pxn" firstAttribute="leading" secondItem="iwH-92-jat" secondAttribute="leading" constant="30" id="su7-VX-oN1"/>
                                         <constraint firstItem="il1-I2-5iC" firstAttribute="leading" secondItem="fux-su-DIU" secondAttribute="leading" id="u0N-EI-eIj"/>
                                         <constraint firstItem="fux-su-DIU" firstAttribute="top" secondItem="il1-I2-5iC" secondAttribute="bottom" id="vAD-ls-QMs"/>
-                                        <constraint firstItem="il1-I2-5iC" firstAttribute="top" secondItem="PS8-Vr-pxn" secondAttribute="bottom" constant="8" symbolic="YES" id="xNv-Hg-4cN"/>
                                         <constraint firstItem="PS8-Vr-pxn" firstAttribute="leading" secondItem="il1-I2-5iC" secondAttribute="leading" id="xuS-Pv-thd"/>
-                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="top" secondItem="iwH-92-jat" secondAttribute="top" id="yqJ-Sp-xge"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
