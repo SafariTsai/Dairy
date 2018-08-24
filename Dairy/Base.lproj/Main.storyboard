@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,80 +100,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sais" id="IG3-il-0Ls">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LiveCell" rowHeight="571" id="yiP-26-Nbn" customClass="LiveTableViewCell" customModule="Dairy" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="571"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LiveCell" rowHeight="477" id="yiP-26-Nbn" customClass="LiveTableViewCell" customModule="Dairy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="477"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yiP-26-Nbn" id="iwH-92-jat">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="571"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="477"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="portrait" translatesAutoresizingMaskIntoConstraints="NO" id="hxa-Bi-B4F">
-                                            <rect key="frame" x="17" y="11" width="100" height="100"/>
-                                            <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="aw0-Io-7xH"/>
-                                                <constraint firstAttribute="width" constant="100" id="uaN-MK-FcZ"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="30"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="overview" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-Vr-pxn">
-                                            <rect key="frame" x="0.0" y="145" width="375" height="415"/>
+                                            <rect key="frame" x="30" y="0.0" width="315" height="394"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="375" id="EKe-uu-EcF"/>
-                                                <constraint firstAttribute="height" constant="415" id="MVX-DW-Zbf"/>
+                                                <constraint firstAttribute="width" secondItem="PS8-Vr-pxn" secondAttribute="height" multiplier="4:5" id="Qrc-ng-dqv"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                     <integer key="value" value="50"/>
                                                 </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                                                    <color key="value" red="0.1433811865482234" green="0.12176823226303007" blue="0.044113004939399576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                    <size key="value" width="0.0" height="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <real key="value" value="0.050000000000000003"/>
+                                                </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="location" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fux-su-DIU">
-                                            <rect key="frame" x="125" y="92" width="61" height="21"/>
+                                            <rect key="frame" x="30" y="423" width="61" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="online_user" text="online_user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-HQ-JHT">
-                                            <rect key="frame" x="271" y="93" width="86" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="nick" text="nick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il1-I2-5iC">
-                                            <rect key="frame" x="125" y="11" width="31.5" height="21"/>
+                                            <rect key="frame" x="30" y="402" width="32" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="online_user" text="online_user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-HQ-JHT">
+                                            <rect key="frame" x="30" y="452" width="86" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Emb-HQ-JHT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fux-su-DIU" secondAttribute="trailing" symbolic="YES" id="0t1-3G-lFg"/>
-                                        <constraint firstItem="hxa-Bi-B4F" firstAttribute="leading" secondItem="iwH-92-jat" secondAttribute="leadingMargin" constant="1" id="43L-tP-GaH"/>
-                                        <constraint firstAttribute="trailing" secondItem="Emb-HQ-JHT" secondAttribute="trailing" constant="18" id="4WM-2B-Yxk"/>
-                                        <constraint firstItem="il1-I2-5iC" firstAttribute="leading" secondItem="hxa-Bi-B4F" secondAttribute="trailing" constant="8" symbolic="YES" id="4xH-8k-qnI"/>
-                                        <constraint firstItem="fux-su-DIU" firstAttribute="top" secondItem="il1-I2-5iC" secondAttribute="bottom" constant="60" id="64I-WH-Ivy"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="il1-I2-5iC" secondAttribute="trailing" constant="20" symbolic="YES" id="Oak-4d-Aaf"/>
-                                        <constraint firstItem="hxa-Bi-B4F" firstAttribute="top" secondItem="iwH-92-jat" secondAttribute="topMargin" id="QeC-ox-jCN"/>
-                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="leading" secondItem="iwH-92-jat" secondAttribute="leading" id="TuL-g8-5yg"/>
-                                        <constraint firstItem="hxa-Bi-B4F" firstAttribute="top" secondItem="il1-I2-5iC" secondAttribute="top" id="VlM-4R-wVK"/>
-                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="bottom" secondItem="iwH-92-jat" secondAttribute="bottomMargin" id="Yr3-2E-55D"/>
-                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="top" secondItem="Emb-HQ-JHT" secondAttribute="bottom" constant="31" id="add-dk-6VS"/>
-                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="top" secondItem="fux-su-DIU" secondAttribute="bottom" constant="32" id="iG2-LR-VX8"/>
-                                        <constraint firstItem="Emb-HQ-JHT" firstAttribute="top" secondItem="iwH-92-jat" secondAttribute="topMargin" constant="82" id="kWm-yF-iuU"/>
-                                        <constraint firstItem="il1-I2-5iC" firstAttribute="leading" secondItem="fux-su-DIU" secondAttribute="leading" id="wiN-o7-YjQ"/>
+                                        <constraint firstItem="fux-su-DIU" firstAttribute="leading" secondItem="Emb-HQ-JHT" secondAttribute="leading" id="G1V-cw-Yv7"/>
+                                        <constraint firstItem="Emb-HQ-JHT" firstAttribute="top" secondItem="fux-su-DIU" secondAttribute="bottom" constant="8" symbolic="YES" id="lKa-fh-GCF"/>
+                                        <constraint firstAttribute="trailing" secondItem="PS8-Vr-pxn" secondAttribute="trailing" constant="30" id="peQ-rM-2gv"/>
+                                        <constraint firstAttribute="bottom" secondItem="PS8-Vr-pxn" secondAttribute="bottom" constant="83" id="rdY-PD-cHc"/>
+                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="leading" secondItem="iwH-92-jat" secondAttribute="leading" constant="30" id="su7-VX-oN1"/>
+                                        <constraint firstItem="il1-I2-5iC" firstAttribute="leading" secondItem="fux-su-DIU" secondAttribute="leading" id="u0N-EI-eIj"/>
+                                        <constraint firstItem="fux-su-DIU" firstAttribute="top" secondItem="il1-I2-5iC" secondAttribute="bottom" id="vAD-ls-QMs"/>
+                                        <constraint firstItem="il1-I2-5iC" firstAttribute="top" secondItem="PS8-Vr-pxn" secondAttribute="bottom" constant="8" symbolic="YES" id="xNv-Hg-4cN"/>
+                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="leading" secondItem="il1-I2-5iC" secondAttribute="leading" id="xuS-Pv-thd"/>
+                                        <constraint firstItem="PS8-Vr-pxn" firstAttribute="top" secondItem="iwH-92-jat" secondAttribute="top" id="yqJ-Sp-xge"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                            <real key="value" value="0.59999999999999998"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius = 30">
+                                            <integer key="value" value="50"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                            <size key="value" width="0.0" height="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="LabelLocation" destination="fux-su-DIU" id="GVL-PJ-u3a"/>
                                     <outlet property="imgOverview" destination="PS8-Vr-pxn" id="4dZ-d1-Ppb"/>
-                                    <outlet property="imgPor" destination="hxa-Bi-B4F" id="P1W-we-SsR"/>
                                     <outlet property="labelNick" destination="il1-I2-5iC" id="XlK-HV-vzK"/>
                                     <outlet property="labelOLUser" destination="Emb-HQ-JHT" id="KhQ-Cl-16O"/>
                                     <segue destination="JMy-ni-lkJ" kind="show" id="Oxi-nh-w1S"/>
@@ -231,18 +254,58 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <segue destination="emD-nH-467" kind="relationship" relationship="viewControllers" id="Upf-7m-ly2"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="emD-nH-467" kind="relationship" relationship="viewControllers" id="Upf-7m-ly2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1495" y="107"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="a1u-oL-YR3">
+            <objects>
+                <viewController id="WUj-7l-Vgd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2NY-Bg-xtB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egw-JE-mI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fZ1-T4-wxj">
+            <objects>
+                <viewController id="1Xz-En-9RU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="juz-EQ-4h8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2G-J4-sYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ihG-j6-Mn6">
+            <objects>
+                <viewController id="YyE-7t-noe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dYt-Lj-38v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UI-3f-Df2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="sais" width="238" height="104"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

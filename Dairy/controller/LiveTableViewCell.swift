@@ -15,7 +15,6 @@ class LiveTableViewCell: UITableViewCell {
 	@IBOutlet weak var labelOLUser: UILabel!
 	@IBOutlet weak var LabelLocation: UILabel!
 	@IBOutlet weak var labelNick: UILabel!
-	@IBOutlet weak var imgPor: UIImageView!
 	
 	
 	override func awakeFromNib() {

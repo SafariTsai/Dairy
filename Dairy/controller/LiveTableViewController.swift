@@ -83,7 +83,6 @@ class LiveTableViewController: UITableViewController {
 		cell.labelOLUser.text = String(live.online_users)
 		let imgurl = URL(string:live.portrait)
 		cell.imgOverview.kf.setImage(with: imgurl)
-		cell.imgPor	.kf.setImage(with: imgurl)
         // Configure the cell...
         return cell
     }
