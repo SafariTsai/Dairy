@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -65,13 +66,13 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xDA-uA-WsA">
                                 <rect key="frame" x="0.0" y="67" width="375" height="376"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SecCell" rowHeight="358" id="yFs-Lz-5lQ" customClass="SecTableViewCell" customModule="Dairy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="358"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yFs-Lz-5lQ" id="gyu-nQ-wZA">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yFs-Lz-5lQ" id="gyu-nQ-wZA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="358"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -89,10 +90,10 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="O59-QE-wAU" firstAttribute="top" secondItem="gyu-nQ-wZA" secondAttribute="top" constant="23" id="MwR-YL-Ukd"/>
-                                                <constraint firstAttribute="trailing" secondItem="O59-QE-wAU" secondAttribute="trailing" constant="51" id="VeD-6d-AsM"/>
-                                                <constraint firstItem="O59-QE-wAU" firstAttribute="leading" secondItem="gyu-nQ-wZA" secondAttribute="leading" constant="51" id="hEf-kG-kmA"/>
-                                                <constraint firstAttribute="bottom" secondItem="O59-QE-wAU" secondAttribute="bottom" constant="23" id="wsV-HT-2Mx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="O59-QE-wAU" secondAttribute="bottom" constant="12" id="8P4-92-gNW"/>
+                                                <constraint firstItem="O59-QE-wAU" firstAttribute="leading" secondItem="gyu-nQ-wZA" secondAttribute="leadingMargin" constant="36" id="AyD-Ga-qZd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="O59-QE-wAU" secondAttribute="trailing" constant="36" id="NBD-lN-8HQ"/>
+                                                <constraint firstItem="O59-QE-wAU" firstAttribute="top" secondItem="gyu-nQ-wZA" secondAttribute="topMargin" constant="12" id="zpH-KZ-ze7"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">

@@ -16,7 +16,7 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
 	let get_uid_url = "http://baseapi.busi.inke.cn/live/LiveHotList"
 	var list : [INKCell] = []
 	
-	////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************************************************/
 	func loadList ( ) {
 		Just.post(get_uid_url) { (r) in
 			guard let json = r.json as? NSDictionary else{
@@ -32,10 +32,8 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
 			}
 		}
 	}
-	
-	func numberOfSections(in tableView: UITableView) -> Int {
-		return 1
-	}
+/****************************************************************************************************************/
+
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return list.count
 	}
