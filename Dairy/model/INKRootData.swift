@@ -39,7 +39,7 @@ struct INKRootData{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if city != nil{
 			dictionary["city"] = city
 		}

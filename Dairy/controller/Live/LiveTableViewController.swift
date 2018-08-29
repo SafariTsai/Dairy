@@ -20,7 +20,7 @@ class LiveTableViewController: UITableViewController {
 	var list : [INKCell] = []
 	
 	////////////////////////////////////////////////////////////////////////////////
-	func loadList ( ) {
+	@objc func loadList ( ) {
 		Just.post(get_uid_url) { (r) in
 			guard let json = r.json as? NSDictionary else{
 				return
@@ -32,21 +32,19 @@ class LiveTableViewController: UITableViewController {
 			print(self.list)
 			OperationQueue.main.addOperation {
 				self.tableView.reloadData()
+				self.refreshControl?.endRefreshing()
 			}
 		}
 	}
 	
-//	func setRadius(){
-//		let cell = tableView.dequeueReusableCell(withIdentifier: "LiveCell") as! LiveTableViewCell
-//		cell.imgOverview.layer.cornerRadius = 30.0
-//		cell.imgOverview.layer.masksToBounds = true
-//
-//	}
 
     override func viewDidLoad() {
 		
         super.viewDidLoad()
 		loadList()
+		
+		self.refreshControl = UIRefreshControl()
+		refreshControl?.addTarget(self, action: #selector(loadList), for: .valueChanged)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

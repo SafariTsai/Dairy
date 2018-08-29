@@ -30,7 +30,6 @@ class LivingViewController: UIViewController {
 		self.playerView = UIView(frame: view.bounds)
 		view.addSubview(playerView)
 		ijkPlayer = IJKFFMoviePlayerController(contentURLString:liveList.stream_url,with: nil)
-		
 		let pv = ijkPlayer.view!
 		pv.frame = playerView.bounds
 		pv.autoresizingMask = [.flexibleWidth,.flexibleHeight]

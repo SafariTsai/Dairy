@@ -31,7 +31,7 @@ struct INKRootLiveStream{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if data != nil{
 			var dictionaryElements = [NSDictionary]()
 			for dataElement in data {

@@ -1,6 +1,8 @@
 use_frameworks!
+inhibit_all_warnings!
 
 target 'Dairy' do
 pod 'Just'
 pod 'Kingfisher'
+pod 'StreamingKit'
 end

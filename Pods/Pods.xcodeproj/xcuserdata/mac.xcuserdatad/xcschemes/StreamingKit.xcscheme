@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4944FEC314D1A66588651D006273ADE"
-               BuildableName = "Kingfisher.framework"
-               BlueprintName = "Kingfisher"
+               BlueprintIdentifier = "B6E98306AAF3C9E9C4F6ED555EB4BC29"
+               BuildableName = "StreamingKit.framework"
+               BlueprintName = "StreamingKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4944FEC314D1A66588651D006273ADE"
-            BuildableName = "Kingfisher.framework"
-            BlueprintName = "Kingfisher"
+            BlueprintIdentifier = "B6E98306AAF3C9E9C4F6ED555EB4BC29"
+            BuildableName = "StreamingKit.framework"
+            BlueprintName = "StreamingKit"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

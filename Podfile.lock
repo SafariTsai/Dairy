@@ -1,15 +1,18 @@
 PODS:
   - Just (0.5.7)
   - Kingfisher (3.2.2)
+  - StreamingKit (0.1.29)
 
 DEPENDENCIES:
   - Just
   - Kingfisher
+  - StreamingKit
 
 SPEC CHECKSUMS:
   Just: d19e769d86b965e39ae58cb3c0cbad07706634a8
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
+  StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
 
-PODFILE CHECKSUM: 720ad8aa92aa8befa0fab76605670e27c29c992b
+PODFILE CHECKSUM: 98f9e3d2a3d89078defcc31ab1a25340a45c420a
 
 COCOAPODS: 1.4.0
