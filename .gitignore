@@ -23,3 +23,4 @@ lib&IJKFW/libcrypto.a
 lib&IJKFW/librtmp.a
 lib&IJKFW/libssl.a
 lib&IJKFW/libz.tbd
+IJKMediaFramework.framework/IJKMediaFramework

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044068E221368E000016C71B /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044068DE21368DFF0016C71B /* IJKMediaFramework.framework */; };
+		044068E321368E000016C71B /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044068DF21368DFF0016C71B /* librtmp.a */; };
+		044068E421368E000016C71B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 044068E021368DFF0016C71B /* libz.tbd */; };
+		044068E521368E000016C71B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044068E121368DFF0016C71B /* libssl.a */; };
 		048E3287212C42E200FF5D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E3286212C42E200FF5D92 /* AppDelegate.swift */; };
 		048E328E212C42E200FF5D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048E328C212C42E200FF5D92 /* Main.storyboard */; };
 		048E3290212C42E300FF5D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048E328F212C42E300FF5D92 /* Assets.xcassets */; };
 		048E3293212C42E300FF5D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048E3291212C42E300FF5D92 /* LaunchScreen.storyboard */; };
-		04AD514D212FA4340064FD76 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AD5147212FA4320064FD76 /* IJKMediaFramework.framework */; };
-		04AD514E212FA4340064FD76 /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AD5148212FA4330064FD76 /* librtmp.a */; };
-		04AD514F212FA4340064FD76 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AD5149212FA4330064FD76 /* libssl.a */; };
-		04AD5150212FA4340064FD76 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AD514A212FA4330064FD76 /* libz.tbd */; };
 		04B1D1F6212D0D5D00C36D72 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 04B1D1F5212D0D5D00C36D72 /* podfile */; };
 		04C10F42212FFEE30090C8AC /* INKRootLiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C10F3F212FFEE30090C8AC /* INKRootLiveStream.swift */; };
 		04C10F43212FFEE30090C8AC /* INKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C10F40212FFEE30090C8AC /* INKCell.swift */; };
@@ -29,16 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044068DE21368DFF0016C71B /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		044068DF21368DFF0016C71B /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librtmp.a; sourceTree = "<group>"; };
+		044068E021368DFF0016C71B /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libz.tbd; sourceTree = "<group>"; };
+		044068E121368DFF0016C71B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		048E3283212C42E200FF5D92 /* Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dairy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048E3286212C42E200FF5D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048E328D212C42E200FF5D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		048E328F212C42E300FF5D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048E3292212C42E300FF5D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048E3294212C42E300FF5D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AD5147212FA4320064FD76 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = "lib&IJKFW/IJKMediaFramework.framework"; sourceTree = "<group>"; };
-		04AD5148212FA4330064FD76 /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtmp.a; path = "lib&IJKFW/librtmp.a"; sourceTree = "<group>"; };
-		04AD5149212FA4330064FD76 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "lib&IJKFW/libssl.a"; sourceTree = "<group>"; };
-		04AD514A212FA4330064FD76 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = "lib&IJKFW/libz.tbd"; sourceTree = "<group>"; };
 		04B1D1F5212D0D5D00C36D72 /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04C10F3F212FFEE30090C8AC /* INKRootLiveStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = INKRootLiveStream.swift; path = model/INKRootLiveStream.swift; sourceTree = "<group>"; };
 		04C10F40212FFEE30090C8AC /* INKCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = INKCell.swift; path = model/INKCell.swift; sourceTree = "<group>"; };
@@ -60,10 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AD514F212FA4340064FD76 /* libssl.a in Frameworks */,
-				04AD5150212FA4340064FD76 /* libz.tbd in Frameworks */,
-				04AD514E212FA4340064FD76 /* librtmp.a in Frameworks */,
-				04AD514D212FA4340064FD76 /* IJKMediaFramework.framework in Frameworks */,
+				044068E421368E000016C71B /* libz.tbd in Frameworks */,
+				044068E521368E000016C71B /* libssl.a in Frameworks */,
+				044068E221368E000016C71B /* IJKMediaFramework.framework in Frameworks */,
+				044068E321368E000016C71B /* librtmp.a in Frameworks */,
 				60EC7C655D8D7BB07B6EE4EF /* Pods_Dairy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,10 +74,10 @@
 		048E327A212C42E100FF5D92 = {
 			isa = PBXGroup;
 			children = (
-				04AD5147212FA4320064FD76 /* IJKMediaFramework.framework */,
-				04AD5148212FA4330064FD76 /* librtmp.a */,
-				04AD5149212FA4330064FD76 /* libssl.a */,
-				04AD514A212FA4330064FD76 /* libz.tbd */,
+				044068E121368DFF0016C71B /* libssl.a */,
+				044068DE21368DFF0016C71B /* IJKMediaFramework.framework */,
+				044068DF21368DFF0016C71B /* librtmp.a */,
+				044068E021368DFF0016C71B /* libz.tbd */,
 				04B1D1F5212D0D5D00C36D72 /* podfile */,
 				048E3285212C42E200FF5D92 /* Dairy */,
 				048E3284212C42E200FF5D92 /* Products */,
